@@ -48,7 +48,7 @@ img, iframe {
 body {
     font-family: 'HappyTimes', serif;
     font-weight: normal;
-    font-size: .80em;
+    font-size: .8em;
     color: var(--dark);
     background: var(--light);
     margin: 20px;
@@ -166,10 +166,17 @@ b {
         grid-template-columns: 1fr;
     }
 
-    #sub-title {
-        font-size: 1em;
+    .ddg-item {
+        grid-column: span 4;
     }
 
+    #sub-title, nav p {
+        font-size: 3em;
+    }
+
+    .heartbox {
+        padding-left: 45%;
+    }
 }
 
 @media screen and (min-width: 768px) {
@@ -199,8 +206,15 @@ b {
     }
 
     .ddg-item:nth-last-child(1):nth-child(odd) {
-        grid-column: 2/ span 6
+        grid-column: 2/ span 6;
     }
-    
+
+    .center-image {
+        grid-column: span 8;
+    }
+
+    .heartbox {
+        padding-left: 10%;
+    }
 }
 
