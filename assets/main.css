@@ -48,12 +48,16 @@ img, iframe {
 body {
     font-family: 'HappyTimes', serif;
     font-weight: normal;
-    font-size: .8em;
+    font-size: 1em;
     color: var(--dark);
     background: var(--light);
     margin: 20px;
     overflow-x: hidden;
     cursor: crosshair;
+}
+
+nav p {
+    font-size: 3em
 }
 
 /* a */
@@ -92,7 +96,7 @@ nav p, .ddg-title-link{
 nav b {
     font-family: 'HappyTimes', serif;
     font-weight: normal;
-    font-size: 1em;
+    
 }
 
 #sub-title {
@@ -133,7 +137,6 @@ footer {
 b {
     display: inline-block;
     color: var(--dark);
-    font-size: 3em;
     animation-name: morph;
     animation-duration: 2s;
     animation-iteration-count: infinite;
@@ -170,10 +173,6 @@ b {
         grid-column: span 4;
     }
 
-    #sub-title, nav p {
-        font-size: 3em;
-    }
-
     .heartbox {
         padding-left: 45%;
     }
@@ -193,7 +192,13 @@ b {
         max-width: 800px;
     }
 
+    nav p {
+        font-size: 1em
+    }
+    
+
 }
+
 
 @media screen and (min-width: 1024px) {
 
