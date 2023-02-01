@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<script type="text/javascript" src="assets/jquery-3.4.1.js"></script>
+<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+<script type="text/javascript" src="assets/jquery.fitvids.js"></script>
+<script type="text/javascript" src="assets/script.js"></script>
+<link rel="stylesheet" href="assets/main.css" type="text/css">
+<link rel="icon" href="favicon.ico" type="image/gif">
+<meta name="description" content="A portfolio site by Deric Hamer.">
+<title>Deric Hamer</title>
+<style>
+  .ddg-title:hover {
+    padding: 50px;
+    color: peru;
+    filter: blur(3px);
+  }
+
+  /* back button */
+  .float{
+    position:fixed;
+    /* width:60px;
+    height:60px; */
+    bottom:40px;
+    right:40px;
+    color:white;
+    text-align:center;
+    /* box-shadow: 2px 2px 3px rgb(0, 0, 0); */
+  }
+
+  b {
+    display: inline-block;
+    color:white;
+    font-size: 3em;
+    animation-name: morph;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+  }
+
+</style>
+</head>
+<body>
+
+  <a href="#top" class="float">
+    <b style="transform:rotate(270deg);font-style:normal;"> ⇢ </b>
+  </a>
+
+  <div class="grid">
+  
+    <nav id="top">
+      <p>
+        <a href="../index.html">Deric Hamer</a>
+        <br>
+        Portfolio Website
+        <br>
+        Categories:
+        <b class="btn-all">All</b>, 
+        <b class="btn-graf">Graphic Design</b>,
+        <b class="btn-fash">Fashion</b>, 
+        <b class="btn-draw">Drawings</b>, 
+        <b class="btn-misc">Misc.</b>
+      </p>
+      <p id="sub-title">
+        A focus on graphic design with an interest in fashion.
+      </p>
+    </nav>
+
+      <!-- 2023 -->
+      <div class="ddg draw">
+      <p class="ddg-item">2023 - New</p>
+      <p class="ddg-item">Digital sketch with gradient.</p>
+      <img class="ddg-item" src="img/new.jpg">
+    </div>
+
+    <div class="ddg draw">
+      <p class="ddg-item">2023 - Crying</p>
+      <p class="ddg-item">Digital sketch in grayscale.</p>
+      <img class="ddg-item" src="img/crying.jpg">
+    </div>
+
+      <!-- 2022 -->
+      <div class="ddg graf">
+      <p class="ddg-item">2022 - Ras Harba</p>
+      <p class="ddg-item">Design for shipping company. Ras al-Harba means spearhead in Arabic. We shortened it to Ras Harba for something phonetically friendlier to English speakers as this company mainly operates stateside. Rendered in Kufic style calligraphy.</p>
+      <img class="ddg-item" src="img/ras.jpg">
+    </div>
+
+    <div class="ddg fash">
+      <p class="ddg-item">2022 - Balisong Rayon</p>
+      <p class="ddg-item">Hand drawn print featuring balisongs. Rendered with a human feel to evoke the hand-painted designs of 1940s aloha shirts..</p>
+      <img class="ddg-item" src="img/bali1.jpg">
+      <img class="ddg-item" src="img/bali2.jpg">
+    </div>
+
+    <div class="ddg fash">
+      <p class="ddg-item">2022 - No Filter Merch</p>
+      <p class="ddg-item">T-shirt design made to commemorate the Rolling Stones’ No Filter Tour. Produced exclusively for the doctors and medical team. Direct-to-garment print, with a white base layer and custom vinyl lettering on sleeve of doctors’ names.</p>
+      <img class="ddg-item crop" src="img/rs1.jpg">
+      <img class="ddg-item crop" src="img/rs2.jpg">
+    </div>
+
+    <div class="ddg fash">
+      <p class="ddg-item">2022 - Trinket Necklace</p>
+      <p class="ddg-item">Necklace made from yard sale emphemera.</p>
+      <img class="ddg-item" style="filter:brightness(85%)" src="img/trink.jpg">
+    </div>
+
+    <!-- 2021 -->
+    <div class="ddg graf">
+      <p class="ddg-item">2021 - Hannibal Transportation</p>
+      <p class="ddg-item">Design for medical transportation company in Rochester, MN. Most companies in this sector use dated colorful forms with plain text. We chose to do something contemporary, bold and serious to contrast other companies.</p>
+      <img class="ddg-item" src="img/hannibal.png">
+    </div>
+
+    <!-- 2020 -->
+
+    <div class="ddg graf">
+      <p class="ddg-item">2020 - El-Bashir Law</p>
+      <p class="ddg-item">Design and website for a law firm. In anticipation for multi-lingual clients, made to be easily rendered in English and Arabic with a movable symbol. I used Google Noto so this logo could be rendered in any language.</p>
+      <img class="ddg-item" style="grid-column: span 8; padding-bottom: 10%;" src="img/elb1.png">
+      <img class="ddg-item" style="grid-column: span 8; padding-bottom: 10%;" src="img/elb2.png">
+      <img class="ddg-item" style="grid-column: span 8" src="img/elb3.png">
+    </div>
+
+    <!-- 2019 -->
+    <div class="ddg fash">
+      <p class="ddg-item">2019 - Capsule Collection</p>
+      <p class="ddg-item">Capsule inspired by my time in Sudan. Reversible shirt is inspired by traditional <span id="jilabiyah">جلابية</span> (jilabīyah), which are reversible and have pockets on each side. Tracksuits made from Sudanese fabric, used to make traditional garments called على الله (Alallah), a garment meant for mobility and comfort in Sudan as tracksuits are in the United States.</p>
+      <img class="ddg-item" src="img/ts2.jpg">
+      <img class="ddg-item" src="img/ts1.jpg">
+      <img class="ddg-item" src="img/ts4.jpg">
+      <img class="ddg-item" src="img/ts5.jpg">
+      <img class="ddg-item" src="img/ts3.jpg">
+    </div>
+
+    <div class="ddg graf">
+      <p class="ddg-item">2019 - Eureka Projects</p>
+      <p class="ddg-item">Identity and website for <a href='https://www.eurekaprojects.net/' target="_blank">Eureka Projects</a>, a commercial film production company. Adaptable branding for potential company divisions.</p>
+      <img class="ddg-item" style="grid-column: span 8;" src="img/e-style.jpg">
+      </div>
+
+    <!-- 2018 -->
+    <!-- <div class="ddg fash">
+      <p class="ddg-item">2018 - Off The Cuff</p>
+      <p class="ddg-item">I was creative director of <a href='http://www.offthecuffmag.com/search?q=deric%20hamer' target="_blank">Off The Cuff</a> while at Boston University, a student-run art, fashion and culture magazine. Responsible for direction and production of creative multi-media content. Management of full creative department including models, make-up artists, photographers, videographers and stylists.</p>
+      <img class="ddg-item" src="img/otc1.jpg">
+      <img class="ddg-item" src="img/otc2.jpg">
+    </div> -->
+    
+    <div class="ddg graf">
+      <p class="ddg-item">2018 - Nomad Vol. 2</p>
+      <p class="ddg-item">Cover and book design for Nomad Vol. 2 by Ronnie Feng. The book features illustrations from the author’s childhood friend, <a href=“https://www.sisiyuart.com/“ target="_blank">Sisi Yu</a>. A seal, featuring a character of the author’s choosing, produced to grace the half-cover.</p>
+      <img class="ddg-item"  src="img/n1.jpg">
+      <img class="ddg-item" src="img/n3.jpg">
+    </div>
+
+    <div class="ddg fash">
+      <p class="ddg-item">2018 - 'The Hunt' Fabric</p>
+      <p class="ddg-item">Original photo silk-screened print natural linen woven..</p>
+      <img class="ddg-item" style="grid-column: 2 / span 6" src="img/hunt1.jpg">
+      <img class="ddg-item" style="grid-column: 2 / span 6" src="img/hunt2.jpg">
+    </div>
+    
+    <div class="ddg draw">
+      <p class="ddg-item">2018 - Self Portrait</p>
+      <p class="ddg-item">Exquisite corpse of my face, on a paper folded by four. Drawn by separate friends on separate dates.</p>
+      <img class="ddg-item" src="img/cc-g-1.jpg">
+      <img class="ddg-item" src="img/cc-g-2.jpg">
+    </div>
+  
+    <div class="ddg fash">
+      <p class="ddg-item">2018 - Fight T-Shirts</p>
+      <p class="ddg-item">Printed on a rolling press using four laser etched acrylic plates. Branding then silkscreened on. Printing continued till each plate was broken, each mistake is shown. Made for <i>Child Clothing</i>.</p>
+      <img class="ddg-item" src="img/f3.jpg">
+      <img class="ddg-item" src="img/f2.jpg">
+      <img class="ddg-item" src="img/f1.jpg">
+      <img class="ddg-item" src="img/f4.gif">
+    </div>
+
+    <div class="ddg misc">
+      <p class="ddg-item">2018 - Gravestone Print</p>
+      <p class="ddg-item">Etching and Aquatint depicting a remembrance of my life with things that affected it.</p>
+      <img class="ddg-item" src="img/gsp.jpg">
+    </div>
+
+    <div class="ddg misc">
+      <p class="ddg-item">2018 - Pills Monoprint</p>
+      <p class="ddg-item">Inspired by a famous painting (I forget the name off the artist though).</p>
+      <img class="ddg-item" src="img/pills.jpg">
+    </div>
+    
+    <div class="ddg misc">
+      <p class="ddg-item">2018 - Toner Printer</p>
+      <p class="ddg-item">Series printed using toner taken from a printer. Silkscreen onto paper then fixed via hot plate.</p>
+      <img class="ddg-item crop brighten" src="img/toner1.jpeg">
+      <img class="ddg-item crop brighten" src="img/toner2.jpeg">
+      <img class="ddg-item crop brighten" src="img/toner3.jpeg">
+      <img class="ddg-item crop brighten" src="img/toner4.jpeg">
+      <img class="ddg-item crop brighten" src="img/toner5.jpeg">
+    </div>
+
+    <div class="ddg fash">
+      <p class="ddg-item">2017 - Gaudiness Incarnate</p>
+      <p class="ddg-item">
+        Editorial for a fashion and culture magazine.</p>
+      <img class="ddg-item crop" src="img/gaudy1.jpg">
+      <img class="ddg-item crop" src="img/gaudy2.jpg">
+    </div>
+
+    <!-- 2017 -->
+    <div class="ddg fash">
+      <p class="ddg-item">2017 - Minnesota</p>
+      <p class="ddg-item">
+        Styling editorial reflecting on the then current trend of wearing classic workwear and hunting items and prints like safety vests, blaze orange, and Realtree camo. Inspired by the work of Moroccan photographer Hassan Hajjaj and rethought in the context of small town Minnesota.</p>
+      <img class="ddg-item crop" src="img/min1.jpg">
+      <img class="ddg-item crop" src="img/min2.jpg">
+    </div>
+
+    <div class="ddg fash">
+      <p class="ddg-item">2017 - 'Stay at Home Mom'</p>
+      <p class="ddg-item">
+        Styling editorial reflecting on the then current trend of wearing classic workwear and hunting items and prints like safety vests, blaze orange, and Realtree camo. Inspired by the work of Moroccan photographer Hassan Hajjaj and rethought in the context of small town Minnesota.</p>
+      <img class="ddg-item crop" src="img/mom1.jpg">
+      <img class="ddg-item crop" src="img/mom3.jpg">
+      <img class="ddg-item crop" src="img/mom2.jpg">
+    </div>
+
+    <div class="ddg fash">
+      <p class="ddg-item">2017 - Trans</p>
+      <p class="ddg-item">
+        Styling editorial reflecting on the then current trend of wearing classic workwear and hunting items and prints like safety vests, blaze orange, and Realtree camo. Inspired by the work of Moroccan photographer Hassan Hajjaj and rethought in the context of small town Minnesota.</p>
+      <img class="ddg-item crop" src="img/trans1.jpg">
+      <img class="ddg-item crop" src="img/trans2.jpg">
+      <img class="ddg-item crop" src="img/trans3.jpg">
+      <img class="ddg-item crop" src="img/trans4.jpg">
+      <img class="ddg-item crop" src="img/trans5.jpg">
+    </div>
+
+
+    <div class="ddg misc">
+      <p class="ddg-item">2017 - Facial Scans</p>
+      <p class="ddg-item">Scans of the face</p>
+      <img class="ddg-item crop" src="img/scan1.jpg">
+      <img class="ddg-item crop" src="img/scan2.jpg">
+      <img class="ddg-item crop" src="img/scan3.jpg">
+    </div>
+
+    <div class="ddg fash">
+      <p class="ddg-item" style="grid-area: 1; grid-column: span 4;">2017 - Wo/man</p>
+      <p class="ddg-item" style="grid-area: 2; grid-column: span 4;">Reversal of traditional gender roles in a classic U.S. context.</p>
+      <img class="ddg-item" style="grid-column-end: -1; grid-row: span 2 " src="img/wo3.jpeg">
+      <img class="ddg-item" style="grid-column: span 8;" src="img/wo2.jpeg">
+      <img class="ddg-item" style="grid-column: span 8;" src="img/wo1.jpeg">
+    </div>
+
+    <div class="ddg fash">
+      <p class="ddg-item"><a href="works/50-it/index.html" class="ddg-title-link">2017 - Nun Iterans</a></p>
+      <p class="ddg-item">For this project I made 50 unique compositions of a Corita Kent piece. The assignment was to create one interation for 50 days and then compile all in a format appropriate to the piece and project. I created this website, which below displays all 50 iterations. The original is a serigraph produced in 1965 and titled 'no one walks waters'</p>
+      <img class="ddg-item" src="works/50-it/30.jpg">
+      <img class="ddg-item" src="works/50-it/48.jpg">
+    </div>
+
+    <div class="ddg graf">
+      <p class="ddg-item"><a href="works/50-it/index.html" class="ddg-title-link">2017 - Nun Iterans</a></p>
+      <p class="ddg-item">For this project I made 50 unique compositions of a Corita Kent piece. The assignment was to create one interation for 50 days and then compile all in a format appropriate to the piece and project. I created this website, which below displays all 50 iterations. The original is a serigraph produced in 1965 and titled 'no one walks waters'</p>
+      <img class="ddg-item" src="works/50-it/30.jpg">
+      <img class="ddg-item" src="works/50-it/48.jpg">
+    </div>
+
+    <div class="ddg misc">
+      <p class="ddg-item"><a href="works/heart/index.html" class="ddg-title-link">2017 - Heartbeat Site</a></p>
+      <p class="ddg-item">If a website was alive, basically.</p>
+      <svg class="ddg-item heartbox" style="grid-column: 5; padding: 60%"  height="100">
+        <a href="heart/index.html">
+        <rect class="heart" width="100" height="100" />
+        </a>
+      </svg>
+      <style>
+        .heartbox {
+        justify-self: center;
+      }
+
+      .heart {
+        grid-column: span 8;
+        width: 100px;
+        height: 100px;
+        fill: white;
+        animation-name: heart;
+        animation-duration: 1.6s;
+        animation-iteration-count: infinite;
+      }
+
+      @keyframes heart {
+        74.99%   {fill:rgb(249, 224, 203);}
+        75%  {fill:red;;}
+        87.5%  {fill:rgb(249, 224, 203);}
+        100%  {fill:red;}
+      }
+      </style>
+    </div>
+
+    <!-- 2016 -->
+    <div class="ddg fash">
+      <p class="ddg-item">2016 - Laser Etched Denim Jacket</p>
+      <p class="ddg-item">Printed on a rolling press using four laser etched acrylic plates. Branding then silkscreened on. Printing continued till each plate was broken, each mistake is shown. Made for <i>Child Clothing</i>.</p>
+      <img class="ddg-item crop" src="img/lj1.jpg">
+      <img class="ddg-item crop" src="img/lj2.jpg">
+      <img class="ddg-item crop" src="img/lj3.jpg">
+    </div>
+
+    <!-- 2015 -->
+    <div class="ddg misc">
+      <p class="ddg-item">2015 - Form Study</p>
+      <p class="ddg-item">Printed on a rolling press using four laser etched acrylic plates. Branding then silkscreened on. Printing continued till each plate was broken, each mistake is shown. Made for <i>Child Clothing</i>.</p>
+      <img class="ddg-item" src="img/fs.jpg">
+    </div>
+
+    <footer>
+      <p>Deric Hamer</p>
+      <a href="#top">
+        <b style="transform:rotate(-90deg);font-style:normal;"> ⇢ </b>
+      </a>
+    </footer>
+
+  </div>
+
+</body>
+</html>
