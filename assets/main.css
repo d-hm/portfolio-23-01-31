@@ -45,6 +45,14 @@ img, iframe {
 }
 
 /* general */
+html, body {
+    overflow-x: hidden;
+  }
+
+body {
+    position: relative
+}
+
 body {
     font-family: 'HappyTimes', serif;
     font-weight: normal;
@@ -64,7 +72,6 @@ nav p {
 a {
     color: var(--dark);
     text-decoration: none;
-    /* font-style: italic; */
 }
 
 a:hover, nav b:hover {
@@ -96,7 +103,28 @@ nav p, .ddg-title-link{
 nav b {
     font-family: 'HappyTimes', serif;
     font-weight: normal;
-    
+}
+
+b {
+    display: inline-block;
+    color: var(--dark);
+    animation-name: morph;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+
+/* back button */
+.float{
+position:fixed;
+bottom:10px;
+left:10px;
+color:white;
+text-align:center;
+}
+
+.float b {
+font-size: 5em;
 }
 
 #sub-title {
@@ -132,15 +160,6 @@ footer {
     border-top: 2px solid black;
     border-bottom: 2px solid black;
     margin-top: 15em;
-}
-
-b {
-    display: inline-block;
-    color: var(--dark);
-    animation-name: morph;
-    animation-duration: 2s;
-    animation-iteration-count: infinite;
-    animation-direction: alternate;
 }
 
 @keyframes morph {

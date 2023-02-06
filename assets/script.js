@@ -5,12 +5,7 @@ $(document).ready(function() {
     });
 
     $(".vimeovideowrap").fitVids();
-
-    // $(".ddb").on('click', function() {
-    //     $(this).siblings('.ddg').toggleClass('ddt');
-    // });
-
-})
+});
 
 $(document).ready(function(){
     $(".btn-all").click(function(){
