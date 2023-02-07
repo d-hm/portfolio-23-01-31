@@ -117,14 +117,14 @@ b {
 /* back button */
 .float{
 position:fixed;
-bottom:10px;
-left:10px;
+bottom:20px;
+right:20px;
 color:white;
 text-align:center;
 }
 
 .float b {
-font-size: 5em;
+font-size: 4em;
 }
 
 #sub-title {
