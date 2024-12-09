@@ -50,7 +50,7 @@ html, body {
   }
 
 body {
-    position: relative
+    position: relative;
 }
 
 body {
@@ -59,13 +59,12 @@ body {
     font-size: 1em;
     color: var(--dark);
     background: var(--light);
-    margin: 20px;
+    margin: 50px;
     overflow-x: hidden;
-    cursor: crosshair;
 }
 
 nav p {
-    font-size: 3em
+    font-size: 3em;
 }
 
 /* a */
@@ -75,7 +74,7 @@ a {
 }
 
 a:hover, nav b:hover {
-    cursor: cell;
+    cursor: pointer;
     text-shadow: -25px 18px 9px #6e6461;
     transform: translateY(-2px);
 }
@@ -114,17 +113,17 @@ b {
     animation-direction: alternate;
 }
 
-/* back button */
+/* up button */
 .float{
 position:fixed;
-bottom:20px;
-right:20px;
+bottom: 12%;
+right: -5em;
 color:white;
 text-align:center;
 }
 
 .float b {
-font-size: 4em;
+font-size: 1.5em;
 }
 
 #sub-title {
@@ -195,6 +194,8 @@ footer {
     .heartbox {
         padding-left: 45%;
     }
+
+    
 }
 
 @media screen and (min-width: 768px) {
@@ -214,7 +215,11 @@ footer {
     nav p {
         font-size: 1em
     }
-    
+
+    .float{
+        bottom: 15%;
+        right: -5em;
+        }
 
 }
 
@@ -240,5 +245,12 @@ footer {
     .heartbox {
         padding-left: 10%;
     }
+
 }
 
+
+
+.date {
+    color: rgb(168, 168, 168);
+    font-style: italic;
+}
