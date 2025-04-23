@@ -3,11 +3,8 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<script type="text/javascript" src="assets/jquery-3.4.1.js"></script>
 <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
-<script type="text/javascript" src="assets/jquery.fitvids.js"></script>
-<script type="text/javascript" src="assets/script.js"></script>
-<link rel="stylesheet" href="assets/main.css" type="text/css">
+<link rel="stylesheet" href="main.css" type="text/css">
 <link rel="icon" href="favicon.ico" type="image/gif">
 <meta name="description" content="A portfolio site by Deric Hamer.">
 <title>Deric Hamer</title>
@@ -34,10 +31,9 @@
         <b class="btn-graf">Graphic Design</b>,
         <b class="btn-fash">Fashion</b>, 
         <b class="btn-draw">Drawings</b>,
-        <b class="btn-misc">Techpacks</b>.
+        <b class="btn-tech">Techpacks</b>.
       </p>
       <a href="art/index.html" id="sub-title">
-        Art Section
       </a>
     </nav>
 
@@ -95,7 +91,7 @@
       <img class="ddg-item" src="img/zbffw24-4.jpeg">
     </div>
 
-    <div class="ddg misc">
+    <div class="ddg tech">
       <p class="ddg-item"><b >1.5 Breast Blouson Jacket Techpack</b></p>
       <img class="ddg-item" src="img/acket-techpack-1.jpg">
       <img class="ddg-item" src="img/acket-techpack-2.jpg">
@@ -129,7 +125,7 @@
 
     
 
-    <div class="ddg misc">
+    <div class="ddg tech">
       <b class="ddg-item">Oxford Cloth Button Down Flat and Callouts</b>
       <img class="ddg-item" src="img/tpm-3.jpg">
     </div>
@@ -225,6 +221,46 @@
     </footer>
 
   </div>
+
+  <script>
+    document.addEventListener("DOMContentLoaded", function() {
+      document.querySelectorAll("img").forEach(img => {
+        img.setAttribute("loading", "lazy");
+      });
+    });
+
+    $(document).ready(function(){
+    $(".btn-all").click(function(){
+    //   $(".ddg").fadeOut();
+      $(".ddg").fadeIn();
+    });
+
+    $(".btn-draw").click(function(){
+        $(".ddg").fadeOut();
+        $(".draw").slideDown(3000);
+    });
+
+    $(".btn-graf").click(function(){
+        $(".ddg").fadeOut();
+        $(".graf").slideDown(3000);
+    });
+
+    $(".btn-video").click(function(){
+        $(".ddg").fadeOut();
+        $(".video").slideDown(3000);
+    });
+
+    $(".btn-fash").click(function(){
+        $(".ddg").fadeOut();
+        $(".fash").slideDown(3000);
+    });
+
+    $(".btn-tech").click(function(){
+        $(".ddg").fadeOut();
+        $(".tech").slideDown(3000);
+    });
+  });
+  </script>
 
 </body>
 </html>

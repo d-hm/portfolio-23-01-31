@@ -2,8 +2,8 @@
 :root {
     --dark: #000000;
     --light: #ffffff;
-    --other: #cd853f;
-    --other2: #87ceeb;
+    --other: #097d49;
+    --other2: #a4f5da;
 }
 
 @font-face {
@@ -25,6 +25,10 @@
     src: url('fonts/happy-times-NG_bold_master_web.ttf') format('truetype');
     font-weight: bold;
     font-style: normal;
+}
+
+html {
+    scroll-behavior: smooth;
 }
 
 /* responsive */
@@ -88,15 +92,10 @@ nav {
     border-bottom: 2px solid black;
 }
 
-nav p, .ddg-title-link{
-    font-family: 'HappyTimes', serif; 
-    text-decoration: none;
-    animation-name: morph;
-    animation-duration: 2s;
-    animation-iteration-count: infinite;
-    animation-direction: alternate;
+.morphing {
+    animation: morph 2s infinite alternate;
     display: inline-block;
-}
+  }
 
 nav b {
     font-family: 'HappyTimes', serif;
@@ -170,12 +169,8 @@ footer {
     to {color: var(--dark)}
 }
 
-/* vimeo trials */
-.vimeovideowrap {
-    width:112%;
-}
+/* ====== Media Queries====== */
 
-/* Media Queries */
 @media screen and (min-width: 460px) {
 
     body {
@@ -248,15 +243,4 @@ footer {
         grid-column: span 8;
     }
 
-    .heartbox {
-        padding-left: 10%;
-    }
-
-}
-
-
-
-.date {
-    color: rgb(168, 168, 168);
-    font-style: italic;
 }
